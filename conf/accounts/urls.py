@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index
+from .views import *
 from django.contrib.auth import views as auth_views
 
 app_name ="accounts"
@@ -19,4 +19,5 @@ urlpatterns = [
 
 urlpatterns += [
     path('', index, name='index'),
+    path('profile/', profile, name='profile'),
 ]

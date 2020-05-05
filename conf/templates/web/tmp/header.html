@@ -18,7 +18,8 @@
                         </ul>
                     </div>
                     <div class="user_box ml-auto">
-                        <div class="user_box_login user_box_link"><a href="#">login</a></div>
+                        <div class="user_box_User user_box_link">{{ user.username }}</div>
+                        <div class="user_box_login user_box_link"><a href="{% url 'accounts:login' %}">login</a></div>
                         <div class="user_box_register user_box_link"><a href="#">register</a></div>
                     </div>
                 </div>

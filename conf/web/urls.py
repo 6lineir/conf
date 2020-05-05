@@ -3,5 +3,5 @@ from .views import index
 
 app_name ="web"
 urlpatterns = [
-    path('', index, name='web'),
+    path('', index, name='index'),
 ]
