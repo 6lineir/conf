@@ -1,35 +1,37 @@
+
 {% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Travelix</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Travelix Project">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{% static 'web/styles/bootstrap4/bootstrap.min.css' %}">
-        <link href="{% static 'web/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/animate.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'web/styles/main_styles.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'web/styles/responsive.css' %}">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Heroic Features - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'web/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'web/css/heroic-features.css' %}" rel="stylesheet">
+
 </head>
 
 <body>
 
 
-
-{% block content %}
-{% endblock %}
-
-<script src="{% static 'web/js/jquery-3.2.1.min.js' %}"></script>
-<script src="{% static 'web/styles/bootstrap4/popper.js' %}"></script>
-<script src="{% static 'web/styles/bootstrap4/bootstrap.min.js' %}"></script>
-<script src="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
-<script src="{% static 'web/plugins/easing/easing.js' %}"></script>
-<script src="{% static 'web/js/custom.js' %}"></script>
+    {% block content %}
+    {% endblock %}
 
 
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'web/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'web/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
+

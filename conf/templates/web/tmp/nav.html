@@ -1,0 +1,35 @@
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'web:index' %}">My Web PRM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'web:index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'web:about' %}">About</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        {% if user.is_authenticated %}
+      
+        <a href="{% url 'accounts:profile' %}" class="btn btn-success">Profile</a>
+          <a href="{% url 'accounts:logout' %}" class="btn btn-danger">LogOut</a>
+                
+            {% else %}
+            <li class="nav-item">
+              <a href="{% url 'accounts:login' %}" class="btn btn-primary">Login</a>
+            </li>
+        {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
